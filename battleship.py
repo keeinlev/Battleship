@@ -208,7 +208,6 @@ timer = seconds
 while (targets != 0 and timer != 0 and guess != 'QUIT'):
     clock = math.ceil(time.process_time())             #this variable gets updated every time the user makes a move
     timer = seconds-clock                       #storage variable
-    print(allShips)
     
     if guess not in boardLocations:           #error checking to prevent crashes
         guessGrid()
